@@ -14,6 +14,10 @@ Assim, Charles Xavier garantiu que cada jovem superdotado encontrasse seu caminh
 Para executar o projeto é necessário que você tenha o SDK do [Java 17] na sua máquina e o [maven] configurado.
 
 ## Testes Unitários
+
+Infelizmente o projeto ainda não tem nenhum teste unitário.</br>
+Sua missão é criar testes relevantes que cubram todos os cenários possíveis do código que está desenvolvido.
+
 <img src="./docs/imagens/wolverine-junit.jpg" alt="Wolverine" width="300">
 
 [maven]: (https://maven.apache.org/install.html)
