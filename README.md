@@ -14,6 +14,7 @@ Assim, Charles Xavier garantiu que cada jovem superdotado encontrasse seu caminh
 Para executar o projeto é necessário que você tenha o SDK do [Java 17] na sua máquina e o [maven] configurado.
 
 ## Testes Unitários
+<img src="./docs/imagens/wolverine-junit.jpg" alt="Wolverine" width="300">
 
 [maven]: (https://maven.apache.org/install.html)
 [Java 17]: (https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
