@@ -9,16 +9,26 @@ A partir da criação do sistema de cadastro de alunos, a Escola Xavier tornou-s
 orientassem os novos mutantes com um controle detalhado de suas capacidades e progressos. 
 Assim, Charles Xavier garantiu que cada jovem superdotado encontrasse seu caminho da melhor maneira possível, dentro e fora da escola.
 
-## Executando o projeto
-
-Para executar o projeto é necessário que você tenha o SDK do [Java 17] na sua máquina e o [maven] configurado.
-
 ## Testes Unitários
 
 Infelizmente o projeto ainda não tem nenhum teste unitário.</br>
 Sua missão é criar testes relevantes que cubram todos os cenários possíveis do código que está desenvolvido.
 
 <img src="./docs/imagens/wolverine-junit.jpg" alt="Wolverine" width="300">
+
+
+## Executando o projeto
+
+Vocë vai precisar de:
+* [Java 17]
+* [maven]
+* uma IDE que esteja familiarizado: Intellij, Eclipse, VS Code, vi.
+* paciência e atenção
+
+### Swagger e testes locais
+
+Após iniciar a aplicação é possível listar todos os endpoints através do endereço:
+http://localhost:8080/swagger-ui/index.html
 
 [maven]: (https://maven.apache.org/install.html)
 [Java 17]: (https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)

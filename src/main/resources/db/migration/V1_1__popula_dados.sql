@@ -1,12 +1,12 @@
 -- Inserindo alunos (mutantes)
-INSERT INTO aluno (id, nome) VALUES
-('1', 'Charles Xavier'),
-('2', 'Logan'),
-('3', 'Ororo Munroe'),
-('4', 'Jean Grey'),
-('5', 'Scott Summers'),
-('6', 'Kurt Wagner'),
-('7', 'Raven Darkhölme');
+INSERT INTO aluno (id, nome_real, nome_fantasia, forca, inteligencia, data_cadastro) VALUES
+('1', 'Charles Francis Xavier', 'Professor X', 50, 1000, '1963-09-01'),
+('2', 'James Howlett', 'Logan', 900, 300, '1970-05-01'),
+('3', 'Ororo Munroe', 'Tempestade', 600, 700, '1980-06-15'),
+('4', 'Jean Elaine Grey', 'Jean Grey', 500, 900, '1986-11-02'),
+('5', 'Scott Summers', 'Ciclope', 700, 600, '1983-07-10'),
+('6', 'Kurt Wagner', 'Noturno', 400, 500, '1985-03-18'),
+('7', 'Raven Darkhölme', 'Mística', 450, 800, '1970-12-05');
 
 -- Inserindo habilidades (mutantes têm muitas!)
 INSERT INTO habilidade (id, tipo, descricao) VALUES
