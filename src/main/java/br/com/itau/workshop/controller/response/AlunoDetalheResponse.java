@@ -1,7 +1,6 @@
 package br.com.itau.workshop.controller.response;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,5 +16,5 @@ public class AlunoDetalheResponse {
     Integer inteligencia;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
     LocalDate dataCadastro;
-    List<HabilidadeDetalheResponse> habilidades;
+    List<HabilidadeResponse> habilidades;
 }

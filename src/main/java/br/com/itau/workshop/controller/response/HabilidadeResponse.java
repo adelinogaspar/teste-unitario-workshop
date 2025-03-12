@@ -5,8 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class HabilidadeDetalheResponse {
-    String id;
+public class HabilidadeResponse {
     String tipo;
     String descricao;
 }

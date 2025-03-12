@@ -1,5 +1,6 @@
 package br.com.itau.workshop.mapper;
 
+import br.com.itau.workshop.controller.request.AlunoDetalheRequest;
 import br.com.itau.workshop.controller.response.AlunoDetalheResponse;
 import br.com.itau.workshop.controller.response.AlunoResponse;
 import br.com.itau.workshop.repository.entity.AlunoEntity;
@@ -19,4 +20,6 @@ public interface AlunoMapper {
     AlunoDetalheResponse toAlunoDetalheResponse(AlunoEntity alunoEntity);
 
     List<AlunoDetalheResponse> toAlunoDetalheResponse(List<AlunoEntity> alunoEntityList);
+
+    AlunoEntity toAlunoEntity(AlunoDetalheRequest alunoDetalheRequest);
 }
