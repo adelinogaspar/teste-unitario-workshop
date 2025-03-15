@@ -10,6 +10,7 @@ import java.util.List;
 @Getter
 @Setter
 public class AlunoDetalheResponse {
+    String id;
     String nomeReal;
     String nomeFantasia;
     Integer forca;

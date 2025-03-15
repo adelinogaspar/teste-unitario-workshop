@@ -51,6 +51,7 @@ Para acessar o console do banco de dados você pode entrar na url http://localho
 
 O usuário e senha de acesso ao banco de dados estão dentro do arquivo `flyway.conf` na raiz do projeto.
 
+Obs: é gerado um arquivo automaticamente pelo h2 em `~/.h2.server.properties`
 # Jacoco
 
 Ao executar o comando de build do maven `mvn clean package` inicialmente, o projeto irá buildar com erro,
