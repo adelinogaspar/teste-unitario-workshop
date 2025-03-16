@@ -39,6 +39,8 @@ class HabilidadeControllerTest {
 
     @Test
     void testListaHabilidadesControllerOK() throws Exception {
+        // TODO: testar recursivamente a saida do controller com um json
+        // https://chat.deepseek.com/a/chat/s/3718da2f-5177-4feb-8c89-d015e814d80f
         List<HabilidadeEntity> habilidadeEntityList = JsonUtil.loadListFromJson("HabilidadeEntityListOK.json", new TypeReference<List<HabilidadeEntity>>() {});
         Mockito.when(habilidadeFacade.listaHabilidades()).thenReturn(habilidadeEntityList);
 
