@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.4.3</version>
+		<version>3.2.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.itau</groupId>
@@ -50,7 +50,7 @@
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-			<version>2.8.5</version>
+			<version>2.1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mapstruct</groupId>
@@ -62,6 +62,18 @@
 			<artifactId>mapstruct</artifactId>
 			<version>${org.mapstruct.version}</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct-processor</artifactId>
+			<version>1.5.5.Final</version> <!-- Use the latest version -->
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -69,6 +81,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.14.0</version>
 				<configuration>
 					<annotationProcessorPaths>
 						<path>
@@ -79,6 +92,11 @@
 							<groupId>org.mapstruct</groupId>
 							<artifactId>mapstruct-processor</artifactId>
 							<version>${org.mapstruct.version}</version>
+						</path>
+						<path>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok-mapstruct-binding</artifactId>
+							<version>0.2.0</version>
 						</path>
 					</annotationProcessorPaths>
 				</configuration>
@@ -159,6 +177,31 @@
 					</excludes>
 				</configuration>
 			</plugin>
+
+			<!--Mutation Tests-->
+<!--			<plugin>
+				<groupId>org.pitest</groupId>
+				<artifactId>pitest-maven</artifactId>
+				<version>1.18.2</version> &lt;!&ndash; Check for latest version &ndash;&gt;
+				<configuration>
+					<targetClasses>
+						<param>br.com.itau.workshop.*</param>
+					</targetClasses>
+					<targetTests>
+						<param>br.com.itau.workshop.*Test</param>
+					</targetTests>
+					<mutationThreshold>80</mutationThreshold>
+					<outputFormats>
+						<param>HTML</param>
+						<param>XML</param>
+					</outputFormats>
+					<threads>4</threads>
+					<timestampedReports>false</timestampedReports>
+					<excludedClasses>
+						<param>org.jacoco.*</param>
+					</excludedClasses>
+				</configuration>
+			</plugin>-->
 		</plugins>
 	</build>
 

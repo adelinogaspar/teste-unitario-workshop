@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "tipo": "Técnica",
+    "descricao": "Habilidade avançada em desenvolvimento de software."
+  },
+  {
+    "id": "2",
+    "tipo": "Técnica2",
+    "descricao": "Habilidade avançada em desenvolvimento de software.v2"
+  }
+]

@@ -59,5 +59,18 @@ pois não possui uma cobertura de testes adequada.
 Dentro do arquivo `./target/site/index.html` está um relatório com a cobertura de código, conforme no exemplo abaixo:
 <img src="./docs/imagens/jacoco.jpg" alt="jacoco">
 
+# Mutation Tests
+Preparado para a etapa final?
+
+Dentro do `pom.xml` existe um `plugin` comentado a partir de `<!--Mutation Tests-->`.
+
+Descomente essa parte do arquivo e rode no terminal de sua IDE:
+
+```bash
+mvn org.pitest:pitest-maven:mutationCoverage
+```
+
+O resultado dos testes de mutação aparecerão em `./target/pit-reports/YYYYMMDDHHMM/index.html`
+
 [maven]: (https://maven.apache.org/install.html)
 [Java 17+]: (https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
