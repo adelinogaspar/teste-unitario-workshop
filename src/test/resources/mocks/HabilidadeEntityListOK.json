@@ -1,12 +1,12 @@
 [
   {
-    "id": "1",
-    "tipo": "Técnica",
-    "descricao": "Habilidade avançada em desenvolvimento de software."
+    "id": "101",
+    "tipo": "Telepatia",
+    "descricao": "Capacidade de ler e controlar mentes."
   },
   {
-    "id": "2",
-    "tipo": "Técnica2",
-    "descricao": "Habilidade avançada em desenvolvimento de software.v2"
+    "id": "102",
+    "tipo": "Fator de Cura",
+    "descricao": "Regeneração acelerada e envelhecimento lento."
   }
 ]

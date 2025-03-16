@@ -39,4 +39,7 @@ public class JsonUtil {
         }
     }
 
+    public static <T> List<T> loadListFromJsonString(String jsonBody, TypeReference<List<T>> typeRef) throws IOException {
+        return objectMapper.readValue(jsonBody, typeRef);
+    }
 }
